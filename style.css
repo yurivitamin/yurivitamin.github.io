@@ -1,13 +1,30 @@
 body{
-  background-color.lightblue;
+background-color: lightblue;
 }
+
 h2{
-  background-color:red;
+background-color:red;
 }
+
+
 h3{
-  background-color:yellow;
+    background-color:yellow;
+    color: tomato;
+
 }
+
 h4{
-  border-style: solid;
-  width:50%
+
+border-style: solid;
+width: 50%;
+}
+
+
+ol{
+color : green;
+}
+
+ul{
+border-style: solid;
+color : red;
 }
