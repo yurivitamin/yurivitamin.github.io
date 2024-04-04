@@ -3,3 +3,43 @@ body
 {background-color: yellow;
 }
 
+body{
+background: #f7f6dc;
+}
+
+header{
+text-align: center;
+}
+
+#menu{
+list-style-type: none;
+overflow: hidden;
+background: #333;
+}
+
+#menu li a{
+float: left;
+display: inline-block;
+color: white;
+padding: 20px 20px;
+text-decoration: none;
+}
+
+#menu li a:hover{
+background: #111;
+}
+
+
+section{
+margin: 5px;
+}
+
+.side{
+float: left;
+padding: 0px 10px;
+}
+
+#aa1{
+padding: 0px 200px;
+
+}
