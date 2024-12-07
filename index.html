@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>CSS</title>
+</head>
+<body>
+<script>
+var time=600 ;
+var min=" " ;
+var sec=" " ;
+var x=setInterval(function(){
+     min=parseInt(time/600 ;
+     sec=time%60 ;
+    document.getElementById("demo").innerHTML=min+"분" +sec +"초" ;
+    time ;
+   if(time<0){
+     clearInterval(x) ;
+     document.getElementById("demo").innerHTML= "시간초과" ;
+   }
+  },1000) ;
+ </script>
+</body>
+</html>
