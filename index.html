@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<div id="wrapper">
+  <form>
+    <label><input type="text" id="startMin" />분</label> // 분 입력 창 
+    <label><input type="text" id="startSec" />초</label> // 초 입력 창 
+    <input
+      type="button"
+      value="START"
+      class="start-btn"
+      onclick="startTimer()" // 타이머 시작 함수 
+    />
+    <input
+      type="button"
+      value="RESET"
+      class="reset-btn"
+      onclick="resetTimer()" // 타이머 리셋 함수 
+    />
+  </form>
+  <hr />
+  <div id="display" class="remaining"></div> 
+
+  <script src="js/timer.js"></script> 
+
+<script>
+let min, sec;
+let timer;
+
+function startTimer() {
+  min = document.querySelector("#startMin").value; 
+  if (min === "") min = 0;
+  sec = document.querySelector("#startSec").value;
+  if (sec === "") sec = 0;
+  timer = setInterval(countTimer, 1000);
+}
+function countTimer() {
+  if (sec != 0) {
+    sec--;
+    document.querySelector("#display").innerText =
+      min + "분" + sec + "초 남았습니다.";
+  } else {
+    if (min != 0) {
+      min--;
+      sec = 59;
+    } else {
+      clearTimer(timer, "타이머 종료");
+    }
+  }
+}
+
+function resetTimer() { // 리셋 버튼 연결
+  clearTimer(timer, "리셋 종료");
+}
+function clearTimer(t, text) {
+  clearInterval(t);
+  document.getElementById("display").innerText = text;
+  document.getElementById("startMin").value = "";
+  document.getElementById("startSec").value = "";
+}
+
+</script>
+
+</body>
+</html?
