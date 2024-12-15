@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial>
+<title>3D Flip Button</title>
+<link href="style.css" rel="stylesheet">
+<style>
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+ body{
+   background-color: black;
+ }
+.container{
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   perspective:1000px;
+}
+.flip-btn{
+  width: 200px;
+  height: 100px;
+  color: white;
+  text-align: center;
+  line-height: 100px;
+  transform-style: preserve-3d;
+  transition: .5c ;
+  cursor: pointer ;
+}
+.flip-btn: hover{
+  transform: rotateX(-90deg);
+}
+.front{
+  background-color: goldenrod;
+  height:100px;
+  transform: translatez(50px);
+}
+.back{
+ background-color: darkgoldenrod;
+ height:100;
+ transform: rotateX(90deg);
+ translatez(150px);
+}
+</style>
+<body>
+    <div class="container">
+      <div class="flip-btn">
+        <div class="front">front</div>
+         <div class="back">back</back>
+         </div>
+       </div>
+</body>
+</html>
