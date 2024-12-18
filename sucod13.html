@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<meta charset="UTF=8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Keyboard</title>
+<style>
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+.keybaord-wrapper{
+ display: flex ;
+background-color: #313131;
+
+}
+.key{
+width: 50px ;
+height: 55px ;
+margin; 2px ;
+border: 7px solid ;
+background-color: #f5f3f1;
+border-color: #dedede #c5c1bd ;
+border-radius: 5px ;
+}
+body{
+display: flex ;
+align-items: center ;
+justify-content: center ;
+min-height: 100vh ;
+background-color: #ccc ;
+}
+.keyboard{
+display: inline-block ;
+padding: 20px 10px ;
+background-color: #f5f3f1 ;
+box-shadow: 0 0 5px rgb(0, 0, 0) ;
+board-radius: 10px ;
+}
+.keyboard-wrapper{
+display: flex ;
+background-color: #313131 ;
+}
+.keycap{
+height: 55px ;
+margin: 2px ;
+border: 7px solid ;
+border-color: #dedede #c5c1bd ;
+border-radius: 5px ;
+}
+.keycap{
+width: 100% ;
+height: 41px ;
+font-size: 13px ;
+line-height: 1 ;
+padding: 5px ;
+background-color: #f5f3f1 ;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.2) ;
+border-radius: 5px ;
+}
+.key___ctrl{
+width: 100px ;
+border-color: #9fcde7 ;
+}
+.key___ctrl .keycap{
+ background-color: #a9dffd ;
+}
+.pressed{
+transform: scale(0.95) ;
+}
+</style>
+</head>
+<body>
+<div class="keyboard">
+<div class="keyboard-wrapper">
+<div class="key key___ctrl key--17">
+<div class="keycap">Ctrl</div>
+</div>
+<div class="key--90">
+<div class="keycap">Z</div>
+</div>
+<div class="key--67">
+<div class="keycap">C</div>
+</div>
+<div class="key--86">
+<div class="keycap">V</div>
+</div>
+</div>
+<script>
+ document.addEventListener("keydown", (e)=>{
+ console.log(e.keyCode) ;
+const key=document.querySelector( ' .key--5{e.keyCode}' );
+if(key){
+  key.classList.add("pressed") ;
+}
+});
+});
+</script>
+</body>
+</html>
