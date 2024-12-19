@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF=8">
+<meta name="viewport" content="width=device-width,initial-sale=1.0">
+<title>Design House</title>
+<link rel="stylesheet" href="style.css">
+<style>
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: bordor-box;
+}
+body{
+  background-color: darkslateblue;
+}
+.wrap{
+  position: apsolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% -50%);
+  color: white;
+  text-align: center;
+}
+.material-icons{
+    font-size: 10rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+#dynamic{
+    position: relative;
+}
+#dynamic::after{
+    content:"" ;
+    display: block;
+    position: absolute;
+    top:0;
+    right:0;
+    width: 40px;
+    height:100%
+    background-color: white;
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>
+<span class="material-icons>language</span></h1>
+<p id="dynamic" class="lg-text">Learn to more</p>
+<class="sm-text">Sucoding | 100 subscribe></p>
+ <div >
+  
+</body>
+</html>
